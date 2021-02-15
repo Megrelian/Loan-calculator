@@ -52,5 +52,8 @@ files:
     # write your code here
   learner_created: false
 feedback_link: https://hyperskill.org/projects/90/stages/500/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 14 Feb 2021 15:16:52 UTC
+record: 1
