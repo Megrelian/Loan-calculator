@@ -10,5 +10,8 @@ files:
     x, y = map(float, input().split(' '))
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7179#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 15 Feb 2021 10:52:44 UTC
 record: -1
