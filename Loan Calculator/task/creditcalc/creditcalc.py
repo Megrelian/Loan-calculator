@@ -1,5 +1,25 @@
 import math
+import argparse
 
+parse = argparse.ArgumentParser()
+parse.add_argument("-t", "--type", choices=["diff", "annuity"], help="please enter type. example diff, or annuity" )
+parse.add_argument("-pa", "--payment", type=float)
+parse.add_argument("-pr", "--principal", type=float)
+parse.add_argument("-pe", "--periods", type=int)
+parse.add_argument("-i", "--interest", type=float)
+arg = parse.parse_args()
+all_parameters = [arg.type, arg.payment, arg.principal, arg.periods, arg.interest]
+
+
+def check_for_arguments_count():
+    x = 0
+    for value in all_parameters:
+        if value is not None:
+            x += 1
+    return x
+
+
+print(arg)
 print("""
 What do you want to calculate?
 type "n" for number of monthly payments,
